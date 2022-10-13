@@ -1,0 +1,251 @@
+*{
+  margin: 0;
+}
+
+:root {
+  --hover-color: #9586F3;
+  --primary-color: #cfd8dc;
+  --secondary-color: #f0f7f8;
+  --text-color: #000000;
+  --radius: 0.2rem;
+}
+
+.dark-theme{
+  --primary-color: #262929;
+  --secondary-color: #000000;
+  --hover-color: #9586F3;
+  --text-color: #FFFFFF;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: var(--secondary-color);
+}
+
+.nav-list {
+  height: 100%;
+  background: var(--primary-color);
+  box-shadow: 0px 0px 10px var(--primary-color);
+  padding: 0;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo{
+  height: 30px;
+}
+nav{
+height: 60px;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-item:first-child {
+margin-right: auto;
+margin-left: 2rem;
+}
+
+.nav-item:nth-child(2), .nav-item:nth-child(3), .nav-item:nth-child(4) {
+height: 100%;
+width: 80px;
+margin-right: 0;
+padding-top: 21px;
+text-align: center;
+background-color: var(--hover-color);
+}
+.nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover {
+background-color: var(--primary-color);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-item a:hover {
+  color: var(--hover-color);
+}
+
+.icon{
+  height: 21px;
+  width: 21px;
+  cursor: pointer;
+  fill: var(--text-color); 
+}
+
+.icon:hover{
+  fill: var(--hover-color);
+}
+/* -------------här */
+
+.portfolio-container {
+  height: 100%;
+  padding-bottom: 1rem;
+  border-radius: 2px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.banner{
+  margin-top: 3rem;
+  height: 100%;
+  width: 80%;
+}
+
+.text{
+  padding-top: 21px;
+  padding-bottom: 30px;
+  padding-left: 12px;
+  color: var(--text-color);
+  margin: 3rem 0;
+}
+
+.card{
+  width: 80%;
+  height: 500px;
+  background-color: var(--secondary-color);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card img{
+  width: 100%;
+  height: 250px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.title, .describtion{
+  padding: 1rem;
+  margin-left: 1rem;
+  color: var(--text-color);
+  text-align: left;
+  text-decoration: none;
+  
+}
+
+.project{
+  padding: 0 1rem;
+  margin-left: 1rem;
+  color: #2563EE;
+  text-align: left;
+  
+}
+
+.github-icon, .email-icon{
+  height: 30px;
+  width: 30px;
+}
+
+.github {
+  text-decoration: none;
+  color: var(--secondary-color);
+
+}
+
+.github:hover {
+  color: var(--text-color);
+}
+
+.cv-container {
+  height: 100%;
+  margin: 1rem;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+}
+
+.cv-container p{
+  padding-top: 21px;
+  padding-bottom: 30px;
+  padding-left: 12px;
+  color: var(--text-color);
+}
+
+h3{
+  margin: 2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.work-exp {
+  margin: 1rem 0;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.education, .languages, .license, .intrest {
+  margin: 1rem 0;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.footer{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-color);
+}
+.active{
+  height: 100%;
+  width: 80px;
+  margin-right: 0;
+  padding-top: 21px;
+  text-align: center;
+  background-color: var(--primary-color);
+  list-style: none;
+}
+
+.active a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+@media only screen and (min-width: 600px) {
+
+  .card img{
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .portfolio-container {
+    width: 830px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card img{
+    width: 100%;
+    height: 400px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .cv-container {
+    width: 830px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
