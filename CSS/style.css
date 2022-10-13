@@ -152,13 +152,13 @@ background-color: var(--primary-color);
   width: 30px;
 }
 
-.github {
+.github, .email {
   text-decoration: none;
   color: var(--secondary-color);
 
 }
 
-.github:hover {
+.github:hover, .email:hover {
   color: var(--text-color);
 }
 
