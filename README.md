@@ -1,4 +1,4 @@
 # CV Sida
 
 
-https://cvsida.netlify.app/index.html
+# https://cvsida.netlify.app/index.html
