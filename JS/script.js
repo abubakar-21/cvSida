@@ -7,3 +7,4 @@ icon.addEventListener("click", ()=> {
     }
     else{
         icon.name = "moon"
+    }
